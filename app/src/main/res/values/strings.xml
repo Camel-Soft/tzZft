@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">tzZft</string>
+    <string name="title">Тестовое задание ЦФТ</string>
     <string name="cancel">Отменить</string>
     <string name="ok">Ок</string>
     <string name="attention">Внимание</string>
-    <string name="error">Ошибка</string>
+    <string name="bin">БИН</string>
+    <string name="helper_text">Не менее 6 символов</string>
 
+    <string name="error">Ошибка</string>
     <string name="error_сonnect">Нет связи. Проверьте соединение с Интернетом</string>
     <string name="error_ssl_unverified">SSL верификация не выполнена</string>
     <string name="error_handshake">Протокол-handshake не выполнен. Проверьте правильность указания адреса сервера</string>
@@ -16,4 +19,5 @@
     <string name="info_404">Информация не найдена. Попробуйте повторить запрос</string>
     <string name="info_from_server">Ошибка. Сервер ответил</string>
     <string name="info_response_body">Тело ответа не определено. Попробуйте повторить запрос</string>
+
 </resources>
