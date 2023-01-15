@@ -18,8 +18,8 @@ class RetroMy (private val headerInterceptor: HeaderInterceptor) {
                 .connectTimeout(3, TimeUnit.SECONDS)
                 .callTimeout(3, TimeUnit.SECONDS)
                 .followRedirects(true)
-                .followSslRedirects(true)
-                .hostnameVerifier { hostName, sslSession -> hostName.equals(sslSession.peerHost) }
+//                .followSslRedirects(true)
+//                .hostnameVerifier { hostName, sslSession -> hostName.equals(sslSession.peerHost) }
 //                .addInterceptor(httpLoggingInterceptor)
                 .addInterceptor(headerInterceptor)
                 .build()

@@ -5,5 +5,5 @@ import com.camelsoft.tzzft.domain.use_cases.use_case_info.EventProgress
 import kotlinx.coroutines.flow.Flow
 
 interface IInfoApi {
-    suspend fun getInfo(bin: Int): Flow<EventProgress<MInfo>>
+    suspend fun getInfo(bin: String): Flow<EventProgress<MInfo>>
 }

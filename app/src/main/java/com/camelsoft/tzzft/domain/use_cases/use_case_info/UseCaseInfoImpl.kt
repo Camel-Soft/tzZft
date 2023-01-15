@@ -19,11 +19,11 @@ import javax.net.ssl.SSLPeerUnverifiedException
 
 class UseCaseInfoImpl(private val netApi: NetApi): IInfoApi {
 
-    override suspend fun getInfo(bin: Int): Flow<EventProgress<MInfo>> = flow {
+    override suspend fun getInfo(bin: String): Flow<EventProgress<MInfo>> = flow {
         try {
             emit(EventProgress.Progress(show = true))
 
-            if (bin < 6) {
+            if (bin.length < 6) {
                 emit(EventProgress.Progress(show = false))
                 emit(EventProgress.UnSuccess(
                     message = getAppContext().resources.getString(R.string.info_short_bin
@@ -51,7 +51,9 @@ class UseCaseInfoImpl(private val netApi: NetApi): IInfoApi {
 
             emit(EventProgress.Progress(show = false))
             response.body()?.let {
-                emit(EventProgress.Success(data = it))
+                val mInfo = it
+                mInfo.dateTime = System.currentTimeMillis()
+                emit(EventProgress.Success(data = mInfo))
             }?: emit(EventProgress.UnSuccess(
                 message = getAppContext().resources.getString(R.string.info_response_body
             )))

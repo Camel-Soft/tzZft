@@ -6,6 +6,10 @@
     <string name="attention">Внимание</string>
     <string name="bin">БИН</string>
     <string name="helper_text">Не менее 6 символов</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="request_info">Информация по запросу</string>
+    <string name="request_history">История запросов</string>
 
     <string name="error">Ошибка</string>
     <string name="error_сonnect">Нет связи. Проверьте соединение с Интернетом</string>
@@ -20,4 +24,17 @@
     <string name="info_from_server">Ошибка. Сервер ответил</string>
     <string name="info_response_body">Тело ответа не определено. Попробуйте повторить запрос</string>
 
+    <string name="card_scheme">Платежная система</string>
+    <string name="card_type">Тип</string>
+    <string name="card_brand">Бренд</string>
+    <string name="card_prepaid">Предоплата</string>
+    <string name="card_bank_name">Название банка</string>
+    <string name="card_bank_url">Сайт банка</string>
+    <string name="card_bank_phone">Контактный телефон банка</string>
+    <string name="card_bank_city">Штаб-квартира банка</string>
+    <string name="card_number_length">CARD NUMBER LENGTH</string>
+    <string name="card_number_luhn">CARD NUMBER LUHN</string>
+    <string name="card_country">Страна</string>
+    <string name="card_country_currency">Национальная валюта</string>
+    <string name="card_country_coord">Координаты</string>
 </resources>

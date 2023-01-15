@@ -7,5 +7,5 @@ import retrofit2.http.Path
 
 interface NetApi {
     @GET("/{bin}")
-    suspend fun getResponseInfo(@Path("bin") bin: Int): Response<MInfo>
+    suspend fun getResponseInfo(@Path("bin") bin: String): Response<MInfo>
 }
